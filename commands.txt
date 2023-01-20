@@ -13,8 +13,17 @@ python -m venv ~/env
 # enter virtual environment
 source ~/env/bin/activate
 
+#install requirements
+pip install -r requirements.txt
+
 # exit virtual environment
 deactivate
 
 # start django server
 python manage.py runserver 0.0.0.0:8000
+
+#Create migrations model for specific profile
+python manage.py makemigrations profiles_api
+
+#Migrate
+python manage.py migrate
