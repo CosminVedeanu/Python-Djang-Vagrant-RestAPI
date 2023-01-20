@@ -1,0 +1,20 @@
+#power on virutal machine
+vagrant up
+
+#power off virtual machine
+vagrant halt
+
+#change directory to vagrant
+cd /vagrant/
+
+#create a new virtual environment
+python -m venv ~/env
+
+# enter virtual environment
+source ~/env/bin/activate
+
+# exit virtual environment
+deactivate
+
+# start django server
+python manage.py runserver 0.0.0.0:8000
