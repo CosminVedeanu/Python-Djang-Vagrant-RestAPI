@@ -27,3 +27,6 @@ python manage.py makemigrations profiles_api
 
 #Migrate
 python manage.py migrate
+
+#Create super user
+python manage.py createsuperuser
